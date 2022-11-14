@@ -1,0 +1,44 @@
+{
+  "name": "hardhat-dapp-starter",
+  "description": "",
+  "author": "",
+  "scripts": {
+    "contract:dev": "npx hardhat node",
+    "contract:compile": "npx hardhat compile",
+    "contract:deploy": "npx hardhat --network localhost run dapp-contract/scripts/deploy.js",
+    "contract:test": "npx hardhat test",
+    "ui:dev": "snowpack dev",
+    "ui:build": "snowpack build",
+    "dev": "concurrently \"npm run contract:dev\" \"npm run ui:dev --secure\""
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.4.4",
+    "chai": "^4.3.6",
+    "concurrently": "^7.0.0",
+    "daisyui": "^2.13.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.1",
+    "hardhat": "^2.9.2",
+    "postcss": "^8.4.12",
+    "snowpack": "^3.8.8",
+    "standard": "^16.0.4",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "dayjs": "^1.11.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.28.1",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.2",
+    "styled-components": "^5.3.6",
+    "zustand": "^3.7.1"
+  }
+}
